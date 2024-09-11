@@ -9,6 +9,8 @@ import com.empresa.supermercado.productos.alimentacionImpl.Congelado;
 import com.empresa.supermercado.productos.alimentacionImpl.Fresco;
 import com.empresa.supermercado.productos.alimentacionImpl.NoPerecedero;
 
+import java.time.LocalDate;
+
 public class Supermercado {
 
     public static void main(String[] args) {
@@ -38,10 +40,10 @@ public class Supermercado {
 
         System.out.println("Pedido con contenedores: " + pedidoActual);
 
-        IProducto frutasManzanas = new Fresco("MNZ", 1000, 1500);
+        IProducto frutasManzanas = new Fresco("MNZ", 1000, 1500, LocalDate.now());
         IProducto postreHelado = new Congelado("HLD", 800, 1000);
         IProducto papelHigienico = new Higiene("PWC", 500, 2500);
-        IProducto frutasPeras = new Fresco("PER", 800, 1200);
+        IProducto frutasPeras = new Fresco("PER", 800, 1200, LocalDate.now().plusDays(2));
 
         IContenedor contenedorManzanas = pedidoActual.addProducto(frutasManzanas);
         IContenedor contenedorHelado = pedidoActual.addProducto(postreHelado);
@@ -59,7 +61,7 @@ public class Supermercado {
         pedidoActual.addProducto(new Drogueria("DET", 2000, 1600)); 
         pedidoActual.addProducto(new Drogueria("LEJ", 1000, 1000)); 
         for (int indice = 0; indice < 24; indice++) {
-            pedidoActual.addProducto(new Fresco("YOG" + indice, 250, 300)); 
+            pedidoActual.addProducto(new Fresco("YOG" + indice, 250, 300, LocalDate.now().plusDays(1)));
         }
         pedidoActual.addProducto(new NoPerecedero("ARR", 1000, 1000)); 
         for (int indice = 0; indice < 5; indice++) {
