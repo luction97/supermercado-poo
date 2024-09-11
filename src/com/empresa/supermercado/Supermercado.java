@@ -52,27 +52,27 @@ public class Supermercado {
             IProducto productoLeche = new NoPerecedero("LCH" + contador, 6600, 7000);
             pedidoActual.addProducto(productoLeche);
         }
-        pedidoActual.addProducto(new Mascotas("GAT", 5000, 10000)); // comida para el gato
-        pedidoActual.addProducto(new Mascotas("PER1", 10000, 20000)); // comida para el perro
-        pedidoActual.addProducto(new Mascotas("PER2", 10000, 20000)); // más comida para el perro
-        pedidoActual.addProducto(new Higiene("GEL", 1500, 1600)); // gel de ducha
-        pedidoActual.addProducto(new Drogueria("DET", 2000, 1600)); // detergente lavadora
-        pedidoActual.addProducto(new Drogueria("LEJ", 1000, 1000)); // lejía
+        pedidoActual.addProducto(new Mascotas("GAT", 5000, 10000)); 
+        pedidoActual.addProducto(new Mascotas("PER1", 10000, 20000)); 
+        pedidoActual.addProducto(new Mascotas("PER2", 10000, 20000)); 
+        pedidoActual.addProducto(new Higiene("GEL", 1500, 1600)); 
+        pedidoActual.addProducto(new Drogueria("DET", 2000, 1600)); 
+        pedidoActual.addProducto(new Drogueria("LEJ", 1000, 1000)); 
         for (int indice = 0; indice < 24; indice++) {
-            pedidoActual.addProducto(new Fresco("YOG" + indice, 250, 300)); // yogur
+            pedidoActual.addProducto(new Fresco("YOG" + indice, 250, 300)); 
         }
-        pedidoActual.addProducto(new NoPerecedero("ARR", 1000, 1000)); // arroz
+        pedidoActual.addProducto(new NoPerecedero("ARR", 1000, 1000)); 
         for (int indice = 0; indice < 5; indice++) {
-            pedidoActual.addProducto(new NoPerecedero("PAS" + indice, 1000, 1200)); // pasta
+            pedidoActual.addProducto(new NoPerecedero("PAS" + indice, 1000, 1200)); 
         }
         for (int indice = 0; indice < 6; indice++) {
-            pedidoActual.addProducto(new Higiene("JAB" + indice, 125, 100)); // pastillas de jabón
+            pedidoActual.addProducto(new Higiene("JAB" + indice, 125, 100));
         }
         for (int indice = 0; indice < 3; indice++) {
-            pedidoActual.addProducto(new Drogueria("EST" + indice, 50, 200)); // estropajos
+            pedidoActual.addProducto(new Drogueria("EST" + indice, 50, 200));
         }
         for (int indice = 0; indice < 10; indice++) {
-            pedidoActual.addProducto(new NoPerecedero("CAL" + indice, 1000, 1200)); // caldo
+            pedidoActual.addProducto(new NoPerecedero("CAL" + indice, 1000, 1200)); 
         }
 
         System.out.println("Pedido con productos: " + pedidoActual);
