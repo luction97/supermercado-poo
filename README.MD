@@ -3,11 +3,11 @@
 ## Descripción del Ejercicio
 Este proyecto es una aplicación para gestionar el embolsado de productos de los pedidos online del supermercado. Los productos deben ser distribuidos entre bolsas y cajas, respetando las restricciones de volumen, peso y categoría.
 
-## Requisitos
-La aplicación debe gestionar los productos y la distribución en bolsas y cajas siguiendo las reglas especificadas:
-
 ## Objetivo
 El objetivo del ejercicio es implementar las clases y métodos necesarios para gestionar los contenedores y productos, respetando las restricciones de peso, volumen y categoría.
+
+## Requisitos
+La aplicación debe gestionar los productos y la distribución en bolsas y cajas siguiendo las reglas especificadas:
 
 1. **Tipos de contenedores**:
     - Las **cajas** son rectangulares y pueden aguantar cualquier peso, pero tienen un volumen limitado por sus dimensiones.
